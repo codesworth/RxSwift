@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RxGram/RxGram.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RX-SERIES.xcodeproj">
    </FileRef>
    <FileRef

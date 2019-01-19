@@ -1,0 +1,8 @@
+Practice makes permanent. By completing these challenges, you’ll practice what you’ve learned in this chapter and pick up a few more tidbits of knowledge about working with observables. A starter playground workspace as well as the finished version of it are provided for each challenge. Enjoy!
+Challenge 1: Perform side effects
+In the never operator example earlier, nothing printed out. That was before you were adding your subscriptions to dispose bags, but if you had added it to one, you would’ve been able to print out a message in subscribe’s onDisposed handler. There is another useful operator for when you want to do some side work that doesn’t affect the observable you’re working with.
+The do operator allows you to insert side effects; that is, handlers to do things that will not change the emitted event in any way. do will just pass the event through to the next operator in the chain. do also includes an onSubscribe handler, something that subscribe does not.
+The method for using the do operator is do(onNext:onError:onCompleted:onSubscribe:onDispose) and you can provide handlers for any or all of these events. Use Xcode’s autocompletion to get the closure parameters for each of the events.
+To complete this challenge, insert the do operator in the never example using the onSubscribe handler. Feel free to include any of the other handlers if you’d like; they work just like subscribe’s handlers do.
+And while you’re at it, create a dispose bag and add the subscription to it.
+Don't forget you can always peek into the finished challenge playground for "inspiration."
